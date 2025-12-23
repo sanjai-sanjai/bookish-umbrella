@@ -396,9 +396,24 @@ export default function TasksPage() {
 
         {/* TASK LIST */}
         <div className="space-y-4">
-          {/* Available and In-Progress Tasks */}
+          {/* Status Label */}
+          {selectedStatusFilter !== "all" && (
+            <div className="flex items-center justify-between px-1 py-2 border-b border-border/30">
+              <p className="text-sm font-semibold text-foreground">
+                📋 Showing: {getStatusLabel()}
+              </p>
+              <button
+                onClick={() => setSelectedStatusFilter("all")}
+                className="text-xs text-muted-foreground hover:text-primary transition-colors"
+              >
+                View All
+              </button>
+            </div>
+          )}
+
+          {/* Task List */}
           <div className="space-y-3">
-            {availableTasks.length === 0 && inProgressTasks.length === 0 && completedTasks.length === 0 ? (
+            {displayedTasks.length === 0 ? (
               <div className="glass-card border border-border rounded-lg p-8 text-center">
                 <Award className="h-12 w-12 text-muted-foreground/30 mx-auto mb-3" />
                 <p className="font-medium text-foreground mb-1">No tasks available</p>
