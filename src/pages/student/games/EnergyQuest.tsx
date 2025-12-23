@@ -524,7 +524,7 @@ export default function EnergyQuest() {
               <Button
                 onClick={releaseWater}
                 disabled={gameState.waterLevel < 5 || gameState.waterMoving}
-                className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-bold"
+                className="bg-gradient-to-r from-accent to-badge hover:from-accent/90 hover:to-badge/90 text-white font-bold"
                 size="lg"
               >
                 💧 Release Water
