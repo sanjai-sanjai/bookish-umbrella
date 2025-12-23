@@ -102,6 +102,8 @@ interface GameState {
   selectedEffects: string[];
   hasReacted: boolean;
   feedback: string;
+  isReacting: boolean;
+  showObservationPanel: boolean;
 }
 
 export default function ReactionDetective() {
@@ -116,6 +118,8 @@ export default function ReactionDetective() {
     selectedEffects: [],
     hasReacted: false,
     feedback: "",
+    isReacting: false,
+    showObservationPanel: false,
   });
 
   const currentReaction = REACTIONS[gameState.currentReactionIndex];
