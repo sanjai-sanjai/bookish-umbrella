@@ -361,8 +361,8 @@ export default function VillagePhysicsExplorer() {
 
             {/* Comparison Table */}
             {Object.values(results).some((r) => r > 0) && (
-              <div className="p-4 rounded-lg bg-blue-50 border border-blue-200">
-                <h3 className="font-bold text-gray-800 mb-3">📊 Distances Recorded</h3>
+              <div className="p-4 rounded-lg bg-muted border border-border/50">
+                <h3 className="font-bold text-foreground mb-3">📊 Distances Recorded</h3>
                 <div className="space-y-2">
                   {Object.entries(SURFACES).map(([key, surface]) => (
                     <div key={key} className="flex justify-between items-center">
