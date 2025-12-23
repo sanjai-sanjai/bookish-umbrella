@@ -8,3 +8,8 @@ export { VillageBudgetPlanner } from "./VillageBudgetPlanner";
 export { DragDropGame } from "./DragDropGame";
 export { MatchingGame } from "./MatchingGame";
 export { SimulationGame } from "./SimulationGame";
+export { MathHeist } from "./MathHeist";
+export { GroceryMarket } from "./GroceryMarket";
+export { DailyMathSpin } from "./DailyMathSpin";
+export { PatternMasterGame } from "./PatternMasterGame";
+export { FarmYieldCalculator } from "./FarmYieldCalculator";
