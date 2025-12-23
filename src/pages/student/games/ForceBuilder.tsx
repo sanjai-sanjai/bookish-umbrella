@@ -381,7 +381,7 @@ export default function ForceBuilder() {
                 }}
                 variant="outline"
                 size="lg"
-                className={cn("w-full", forceApplied === 0 && "col-span-2")}
+                className={cn("w-full text-black", forceApplied === 0 && "col-span-2")}
               >
                 🔄 Reset
               </Button>
