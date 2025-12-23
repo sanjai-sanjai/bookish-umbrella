@@ -108,6 +108,8 @@ export function GameContainer({
       }
       document.documentElement.style.overflow = "";
       document.body.style.overflow = "";
+      setIsFullscreen(false);
+      setIsExpandedView(false);
     };
   }, []);
 
