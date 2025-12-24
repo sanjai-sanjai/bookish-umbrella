@@ -4,44 +4,31 @@ import { useNavigate } from "react-router-dom";
 
 const entrepreneurshipGames = [
   {
-    title: "Business Idea Generator",
-    description: "Discover what problems you can solve in your village",
+    title: "Idea to Income",
+    description: "Turn problems into profit by pitching solutions to villagers",
     emoji: "💡",
-    path: "/student/entrepreneurship/builder",
-    reward: 90,
-    difficulty: "easy" as const,
-  },
-  {
-    title: "Mini Market Simulation",
-    description: "Run your own virtual shop and learn business basics",
-    emoji: "🏪",
-    path: "/student/entrepreneurship/market",
-    reward: 120,
+    path: "/student/entrepreneurship/idea-to-income",
+    reward: 150,
     difficulty: "medium" as const,
+    concept: "Problems → Ideas → Revenue"
   },
   {
-    title: "Customer Service",
-    description: "Learn how to communicate with customers effectively",
+    title: "Startup Survival",
+    description: "Run a juice stall for 7 days, manage cash flow and stay profitable",
+    emoji: "🚀",
+    path: "/student/entrepreneurship/startup-survival",
+    reward: 200,
+    difficulty: "medium" as const,
+    concept: "Cash Flow Management"
+  },
+  {
+    title: "Customer First",
+    description: "Listen to feedback and improve your product each round",
     emoji: "👥",
-    path: "/student/entrepreneurship/customer",
-    reward: 80,
+    path: "/student/entrepreneurship/customer-first",
+    reward: 150,
     difficulty: "easy" as const,
-  },
-  {
-    title: "Profit Calculator",
-    description: "Understand costs, pricing, and making profits",
-    emoji: "📊",
-    path: "/student/entrepreneurship/profit",
-    reward: 100,
-    difficulty: "medium" as const,
-  },
-  {
-    title: "Marketing Magic",
-    description: "Learn how to promote products and attract customers",
-    emoji: "📢",
-    path: "/student/entrepreneurship/marketing",
-    reward: 130,
-    difficulty: "hard" as const,
+    concept: "Customer Feedback Loop"
   },
 ];
 
