@@ -88,14 +88,17 @@ export default function RewardsPage() {
             width: 249px !important;
             height: 327px !important;
           }
-          .edu-coin-header {
+          .edu-coin-header img {
             width: 20px !important;
           }
           .edu-coin-earned {
             width: 35px !important;
           }
+          .edu-coin-summary img {
+            width: 25px !important;
+          }
           .hero-coin-image {
-            margin: 10px auto 10px 0 !important;
+            margin: 0 auto !important;
           }
         }
       `}</style>
